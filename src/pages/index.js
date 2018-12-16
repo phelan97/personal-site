@@ -30,9 +30,6 @@ const IndexPage = () => (
         <h2>Contact Me!</h2>
       </section>
     </main>
-
-    <Footer />
-
   </React.Fragment>
 )
 
