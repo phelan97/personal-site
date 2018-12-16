@@ -6,7 +6,7 @@ import './navbar.css';
 function NavBar() {
   return (
     <nav role="nav">
-      <ul className="nav">
+      <ul>
         <li><Link to="#intro">About</Link></li>
         <li><Link to="#skills">Skills</Link></li>
         <li><Link to="#projects">Projects</Link></li>

@@ -1,22 +1,16 @@
 
-.nav ul {
+nav ul {
   display: flex;
 }
 
-.nav li {
+nav li {
   list-style: none;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #EAF6FF;
-  font-size: 1.1em;
-}
-
-.nav a:hover {
+nav a:hover {
   color: #009FFD;
   /* border-bottom: 1px solid black; */
   transition: 0.4s;
