@@ -54,6 +54,7 @@ main {
 
 p {
   max-width: 80ch;
+  text-align: center;
 }
 
 section {
@@ -73,4 +74,10 @@ section {
 
 #projects {
   background-color: #3454D1;
+}
+
+.anchor a {
+  position: absolute;
+  left: 0px;
+  top: -58px;
 }

@@ -8,7 +8,7 @@ function NavBar() {
     <nav role="nav">
       <ul>
         <li><Link to="#intro">About</Link></li>
-        <li><Link to="#skills">Skills</Link></li>
+        <li><Link to="#target">Skills</Link></li>
         <li><Link to="#projects">Projects</Link></li>
         <li><Link to="#contact">Contact</Link></li>
         {/* <li><Link to="#">Resume</Link></li>

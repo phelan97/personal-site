@@ -1,7 +1,9 @@
 #skills {
+  position: relative;
   background-color: #232528;
   color: white;
-  height: 600px;
+  height: 100%;
+  /* padding-top: 58px; */
 }
 
 #skills h3 {

@@ -20,7 +20,8 @@ const IndexPage = () => (
 
     <main>
       <section id="intro">
-        <h1>Portfolio - Sean Phelan</h1>
+        {/* <h1>Portfolio - Sean Phelan</h1> */}
+        <h1>Sean Phelan</h1>
         <p>I'm a web developer experienced in server side and front end programming. I love trying out new technologies, writing maintainable code, and working with clean designs.</p>
       </section>
       <section id="about">
@@ -35,6 +36,9 @@ const IndexPage = () => (
         <h2>Contact Me!</h2>
       </section>
     </main>
+
+    <Footer />
+    
   </React.Fragment>
 )
 
