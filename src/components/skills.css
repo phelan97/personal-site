@@ -32,3 +32,12 @@
 .skills-container ul {
   text-align: center;
 } */
+
+/* TODO: still breaks on mobile. Height gets weird and testing is off */
+@media only screen and (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* height: auto; */
+  }
+}
