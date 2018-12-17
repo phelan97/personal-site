@@ -11,10 +11,11 @@
   border-bottom: 1px solid #555;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #EAF6FF;
   font-size: 1.1em;
+
 }
 
 #logo {
@@ -22,4 +23,14 @@ a {
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
+}
+
+/* for some reason the link adds extra size */
+#logo a {
+  height: 32px;
+}
+
+#logo img {
+  display: inline-block;
+  height: 32px;
 }

@@ -1,0 +1,34 @@
+#skills {
+  background-color: #232528;
+  color: white;
+  height: 600px;
+}
+
+#skills h3 {
+  text-align: left;
+}
+
+.skills-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-container ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.skills-container div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .skills-container ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-container ul {
+  text-align: center;
+} */
