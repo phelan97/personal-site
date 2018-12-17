@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Intro from '../components/intro';
 import Skills from '../components/skills';
 import {Helmet} from 'react-helmet';
 import hero from '../images/hero.jpg';
@@ -19,11 +20,7 @@ const IndexPage = () => (
     <Header />
 
     <main>
-      <section id="intro">
-        {/* <h1>Portfolio - Sean Phelan</h1> */}
-        <h1>Sean Phelan</h1>
-        <p>I'm a web developer experienced in server side and front end programming. I love trying out new technologies, writing maintainable code, and working with clean designs.</p>
-      </section>
+      <Intro />
       <section id="about">
         <h2>About</h2>
         <p></p>
