@@ -14,23 +14,23 @@ const IndexPage = () => (
 
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Sean Phelan</title>
+      <title>Portfolio - Sean Phelan</title>
     </Helmet>
 
     <Header />
 
     <main>
       <Intro />
-      <section class="about-section">
+      {/* <section class="about-section">
         <a class="anchor" id="about">&nbsp;</a>
         <h2>About</h2>
         <p></p>
-      </section>
-      <Skills />
+      </section> */}
       <section class="projects-section">
         <a class="anchor" id="projects">&nbsp;</a>
         <h2>Projects</h2>
       </section>
+      <Skills />
       <section class="contact-section">
         <a class="anchor" id="contact">&nbsp;</a>
         <h2>Contact Me!</h2>
