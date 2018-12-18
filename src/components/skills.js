@@ -37,11 +37,11 @@ function Skills() {
             <ul>
               <li>Mocha</li>
               <li>Chai</li>
+              <li>Jest</li>
+              <li>Enzyme</li>
               <li>Travis CI</li>
               <li>Git/Github</li>
               <li>Heroku</li>
-              <li>Learning Enzyme!</li>
-              {/* <li>Jest</li> */}
             </ul>
           </div>
         </div>

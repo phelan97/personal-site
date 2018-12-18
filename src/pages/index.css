@@ -64,7 +64,12 @@ section {
 }
 
 .projects-section {
+  
+}
+
+.contact-section {
   background-color: #3454D1;
+  color: white;
 }
 
 a.anchor {
