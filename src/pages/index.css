@@ -54,19 +54,20 @@ p {
 }
 
 section {
+  position: relative;
   height: 600px;
 }
 
 
-#about {
+.about-section {
 
 }
 
-#projects {
+.projects-section {
   background-color: #3454D1;
 }
 
-.anchor a {
+a.anchor {
   position: absolute;
   left: 0px;
   top: -58px;

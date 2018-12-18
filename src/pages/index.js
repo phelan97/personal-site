@@ -21,15 +21,18 @@ const IndexPage = () => (
 
     <main>
       <Intro />
-      <section id="about">
+      <section class="about-section">
+        <a class="anchor" id="about">&nbsp;</a>
         <h2>About</h2>
         <p></p>
       </section>
       <Skills />
-      <section id="projects">
+      <section class="projects-section">
+        <a class="anchor" id="projects">&nbsp;</a>
         <h2>Projects</h2>
       </section>
-      <section id="contact">
+      <section class="contact-section">
+        <a class="anchor" id="contact">&nbsp;</a>
         <h2>Contact Me!</h2>
       </section>
     </main>

@@ -3,7 +3,8 @@ import './intro.css';
 
 function Intro() {
   return (
-    <section id="intro">
+    <section class="intro-section">
+      <a class="anchor" id="intro">&nbsp;</a>
       {/* <h1>Portfolio - Sean Phelan</h1> */}
       <div id="text-block">
         <h1>Sean Phelan</h1>
