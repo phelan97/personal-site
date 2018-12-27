@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Intro from '../components/intro';
 import Skills from '../components/skills';
 import {Helmet} from 'react-helmet';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import hero from '../images/hero.jpg';
 import home from '../images/home.png';
 import background from '../images/background.jpg';
@@ -34,6 +35,11 @@ const IndexPage = () => (
       <section class="contact-section">
         <a class="anchor" id="contact">&nbsp;</a>
         <h2>Contact Me!</h2>
+        <div className="contact-links">
+          <a href="mailto:seanphelan97@gmail.com" className="contact-link"><FaEnvelope size="50px"/></a>
+          <a href="https://www.linkedin.com/in/sean-phelan97"><FaLinkedin size="50px" className="contact-icon"/></a>
+          <a href="https://github.com/phelan97"><FaGithub size="50px" className="contact-icon" /></a>
+        </div>
       </section>
     </main>
 

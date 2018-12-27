@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'gatsby';
+import {FaArrowDown} from 'react-icons/fa';
 import './intro.css';
 
 function Intro() {
@@ -9,7 +11,7 @@ function Intro() {
       <div id="text-block">
         <h1>Sean Phelan</h1>
         <p>I'm a web developer experienced with server side and front end programming. I love trying out new technologies, writing maintainable code, and working with clean design.</p>
-        <p>This site is a work in progress!</p>
+        <Link to="#projects"><button><FaArrowDown size="25px" /></button></Link>
       </div>
     </section>
   )
