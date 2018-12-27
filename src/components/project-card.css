@@ -1,0 +1,39 @@
+
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  /* grid-template-areas: "title title"
+                       "image info"; */
+}
+
+.project-card h3 {
+  /* grid-area: title; */
+  grid-column: span 2;
+  text-align: center;
+}
+
+.project-card img {
+  /* grid-area: image;
+  background-color: red; */
+  /* height: auto; */
+  width: 100%;
+}
+
+.project-info {
+  /* grid-area: info; */
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card {
+    /* grid-template-areas: "title"
+                         "image"
+                         "info"; */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
+  }
+
+  .project-card h3 {
+    grid-column: span 1;
+  }
+}

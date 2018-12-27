@@ -33,7 +33,7 @@ function Skills() {
             <li>Sass</li> */}
         </div>
         <div>
-          <h3>Testing and Tooling</h3>
+          <h3>Testing and tooling</h3>
           <ul>
             <li>Mocha</li>
             <li>Chai</li>
