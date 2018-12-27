@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from './project-card';
 import temp from '../images/background.jpg';
+import './projects.css';
 
 function Projects() {
   return (
