@@ -46,12 +46,21 @@
   margin-top: 10px;
 }
 
-.project-links button {
+.project-button {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
   padding: 10px 15px;
   width: 100%;
   margin-left: 5px;
   margin-right: 5px;
-  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.project-button:hover {
+  background-color: #009FFD;
 }
 
 @media only screen and (max-width: 600px) {

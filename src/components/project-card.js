@@ -17,8 +17,8 @@ function ProjectCard(props) {
           {listData}
         </ul>
         <div className="project-links">
-          <button>GitHub</button>
-          <button>Demo</button>
+          <a className="project-button" target="_blank" href={props.github}>GitHub</a>
+          <a className="project-button" target="_blank" href={props.demo}>Demo</a>
         </div>
       </div>
     </div>

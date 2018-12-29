@@ -29,9 +29,9 @@ const IndexPage = () => (
         <h2>About</h2>
         <p></p>
       </section> */}
-      <About />
       <Projects />
       <Skills />
+      <About />
       <section class="contact-section">
         <a class="anchor" id="contact">&nbsp;</a>
         <h2>Contact Me!</h2>
