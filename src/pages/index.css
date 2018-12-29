@@ -56,12 +56,6 @@ p {
 section {
   position: relative;
   padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-
-.about-section {
-
 }
 
 .projects-section {
@@ -70,6 +64,7 @@ section {
 .contact-section {
   background-color: #3454D1;
   color: white;
+  padding-bottom: 15px;
 }
 
 a.anchor {
@@ -96,5 +91,5 @@ a.anchor {
 }
 
 .contact-links a:hover {
-  color: red;
+  /* color: red; */
 }

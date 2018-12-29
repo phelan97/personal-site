@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Intro from '../components/intro';
 import Skills from '../components/skills';
+import About from '../components/about';
 import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -28,6 +29,7 @@ const IndexPage = () => (
         <h2>About</h2>
         <p></p>
       </section> */}
+      <About />
       <Projects />
       <Skills />
       <section class="contact-section">

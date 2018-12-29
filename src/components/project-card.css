@@ -3,6 +3,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, auto); */
+  margin: 15px;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 3px;
+  /* TODO: border shadow */
+}
+
+.project-card h3 {
+  padding-top: 0px;
+  margin-bottom: 5px;
 }
 
 .project-card h3 {
@@ -16,6 +26,16 @@
 
 .project-info {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  height: auto;
+  flex-basis: 1;
+}
+
+.project-info ul {
+  margin-top: 0px;
 }
 
 .project-links {
@@ -23,6 +43,7 @@
   bottom: 0px;
   display: flex;
   width: 100%;
+  margin-top: 10px;
 }
 
 .project-links button {
@@ -30,6 +51,7 @@
   width: 100%;
   margin-left: 5px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

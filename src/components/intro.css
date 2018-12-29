@@ -6,6 +6,7 @@
   color: white;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #1c1e20;
 }
 
 #text-block {
