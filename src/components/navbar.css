@@ -11,8 +11,25 @@ nav li {
   padding-right: 10px;
 }
 
+nav a {
+  text-decoration: none;
+  color: #EAF6FF;
+  font-size: 1.1em;
+
+}
+
 nav a:hover {
   color: #009FFD;
   /* border-bottom: 1px solid black; */
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a  {
+    font-size: 1em;
+  }
+
+  .nav-projects {
+    display: none;
+  }
 }

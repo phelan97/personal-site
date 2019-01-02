@@ -11,13 +11,6 @@
   border-bottom: 1px solid #555;
 }
 
-header a {
-  text-decoration: none;
-  color: #EAF6FF;
-  font-size: 1.1em;
-
-}
-
 #logo {
   display: flex;
   flex-direction: column;

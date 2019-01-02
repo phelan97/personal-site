@@ -18,6 +18,8 @@ const IndexPage = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Portfolio - Sean Phelan</title>
+      <meta name="description" content="Hi, I'm Sean! This is my portfolio site, which holds some of my latest web development projects" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather|Lora" rel="stylesheet"/>
     </Helmet>
 
     <Header />
