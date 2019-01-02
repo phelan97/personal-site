@@ -19,7 +19,6 @@
   position: absolute;
   bottom: 30px;
   left: auto;
-  /* box-shadow: 1px solid #444; */
 }
 
 #text-block p {
@@ -43,4 +42,11 @@
   background-color: #ccc;
   color: black;
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 430px) {
+  #text-block {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }

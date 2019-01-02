@@ -3,7 +3,6 @@
   background-color: #232528;
   color: white;
   height: 100%;
-  /* padding-top: 58px; */
 }
 
 #skills h3 {
@@ -25,23 +24,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  /* width: 80%;
-  text-align: left; */
 }
-
-/* .skills-container ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skills-container ul {
-  text-align: center;
-} */
 
 @media only screen and (max-width: 600px) {
   .skills-container {
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(3, 1fr); */
-    /* height: auto; */
   }
 }
