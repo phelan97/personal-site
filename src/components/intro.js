@@ -5,8 +5,8 @@ import './intro.css';
 
 function Intro() {
   return (
-    <section class="intro-section">
-      <a class="anchor" id="intro">&nbsp;</a>
+    <section className="intro-section">
+      <a className="anchor" id="intro">&nbsp;</a>
       <div id="text-block">
         <h1>Sean Phelan</h1>
         <p>I'm a web developer experienced with server side and front end programming. I love trying out new technologies, writing maintainable code, and working with clean design.</p>

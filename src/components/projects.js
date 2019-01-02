@@ -13,9 +13,10 @@ function Projects() {
   }
   let tech = ['React', 'Redux', 'Node.js'];
   let sraTech = ['Node.js', 'Express', 'React', 'Apollo Client', 'graphql-yoga'];
+  // TODO: extract data and store it separately
   return (
-    <section class="projects-section">
-      <a class="anchor" id="projects">&nbsp;</a>
+    <section className="projects-section">
+      <a className="anchor" id="projects">&nbsp;</a>
       <h2>Projects</h2>
       <ProjectCard image={truckdImg} desc="Need help moving some things? Have a truck and want to make some extra money? Get Truckd!" title="Truckd"
         github="https://github.com/thinkful-ei24/mountain-men-client" demo="https://mountain-men-truckd.herokuapp.com/"

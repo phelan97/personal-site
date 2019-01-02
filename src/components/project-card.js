@@ -6,7 +6,7 @@ import { checkPropTypes } from 'prop-types';
 function ProjectCard(props) {
   // TODO: Map icon data to a list and display it. Remove tech prop
   // props.icons
-  const listData = props.tech.map(str => <li>{str}</li>);
+  const listData = props.tech.map((str, index) => <li key={index}>{str}</li>);
   return (
     <div className="project-card">
       <h3>{props.title}</h3>

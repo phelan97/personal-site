@@ -7,9 +7,8 @@ import About from '../components/about';
 import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-import hero from '../images/hero.jpg';
-import home from '../images/home.png';
-import background from '../images/background.jpg';
+import favicon from '../images/favicon.ico';
+
 import './index.css';
 
 const IndexPage = () => (
@@ -20,22 +19,18 @@ const IndexPage = () => (
       <title>Portfolio - Sean Phelan</title>
       <meta name="description" content="Hi, I'm Sean! This is my portfolio site, which holds some of my latest web development projects" />
       <link href="https://fonts.googleapis.com/css?family=Merriweather|Lora" rel="stylesheet"/>
+      <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
-
+    
     <Header />
 
     <main>
       <Intro />
-      {/* <section class="about-section">
-        <a class="anchor" id="about">&nbsp;</a>
-        <h2>About</h2>
-        <p></p>
-      </section> */}
       <Projects />
       <Skills />
       <About />
-      <section class="contact-section">
-        <a class="anchor" id="contact">&nbsp;</a>
+      <section className="contact-section">
+        <a className="anchor" id="contact">&nbsp;</a>
         <h2>Contact Me!</h2>
         <div className="contact-links">
           <a href="mailto:seanphelan97@gmail.com" className="contact-link"><FaEnvelope size="50px"/></a>
