@@ -10,7 +10,8 @@
   /* TODO: border shadow */
 }
 
-.project-card h3 {
+.project-card h3,
+.project-card h4 {
   padding-top: 0px;
   margin-bottom: 5px;
 }
@@ -37,6 +38,7 @@
 .project-info p {
   text-align: left;
   margin-left: 20px;
+  margin-top: 5px;
 }
 
 .project-info ul {
@@ -44,11 +46,9 @@
 }
 
 .project-links {
-  position: absolute;
-  bottom: 0px;
   display: flex;
+  margin-top: auto;
   width: 100%;
-  margin-top: 10px;
 }
 
 .project-button {
@@ -68,10 +68,13 @@
   background-color: #009FFD;
 }
 
+.header-summary {
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .project-card {
     grid-template-columns: 1fr;
-    /* grid-template-rows: auto repeat(2, 1fr); */
   }
 
   .project-card h3 {

@@ -12,10 +12,13 @@ function ProjectCard(props) {
       <h3>{props.title}</h3>
       <img src={props.image} />
       <div className="project-info">
+        <h4 className="header-summary">Summary</h4>
         <p>{props.desc}</p>
-        <ul>
+        <h4>Technologies</h4>
+        <p>{props.techStr}</p>
+        {/* <ul>
           {listData}
-        </ul>
+        </ul> */}
         <div className="project-links">
           <a className="project-button" target="_blank" href={props.github}>GitHub</a>
           <a className="project-button" target="_blank" href={props.demo}>Demo</a>
