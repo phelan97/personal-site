@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -18,10 +18,9 @@ h4, h5, h6 {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 20px;
   background-color: rgba(0, 0, 0, 0);
   /* font-size: 1.4em; */
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h3 {
 }
 
 section h2 {
-  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 main {
@@ -56,10 +55,8 @@ p {
 
 section {
   position: relative;
-  padding-top: 10px;
-}
-
-.projects-section {
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .contact-section {

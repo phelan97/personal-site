@@ -3,8 +3,7 @@ import './skills.css';
 
 function Skills() {
   return (
-    <section className="skills-section">
-      <a className="anchor" id="skills">&nbsp;</a>
+    <section className="skills-section" id="skills">
       <h2>Skills</h2>
       <div className="skills-container">
         <div>

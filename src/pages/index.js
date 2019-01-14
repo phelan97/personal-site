@@ -18,7 +18,7 @@ const IndexPage = () => (
       <meta charSet="utf-8" />
       <title>Portfolio - Sean Phelan</title>
       <meta name="description" content="Hi, I'm Sean! This is my portfolio site, which holds some of my latest web development projects." />
-      <link href="https://fonts.googleapis.com/css?family=Merriweather|Lora" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet" />
       <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
 
@@ -29,9 +29,8 @@ const IndexPage = () => (
       <Projects />
       <Skills />
       <About />
-      <section className="contact-section">
-        <a className="anchor" id="contact">&nbsp;</a>
-        <h2>Contact Me!</h2>
+      <section className="contact-section" id="contact">
+        <h2>Contact me!</h2>
         <div className="contact-links">
           <a href="mailto:seanphelan97@gmail.com" className="contact-link"><FaEnvelope size="50px"/></a>
           <a href="https://www.linkedin.com/in/sean-phelan97"><FaLinkedin size="50px" className="contact-icon"/></a>

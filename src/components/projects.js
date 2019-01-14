@@ -21,8 +21,7 @@ function Projects() {
   let graphqlTechStr = graphqlTech.join(', ');
   let sraTechStr = sraTech.join(', ');
   return (
-    <section className="projects-section">
-      <a className="anchor" id="projects">&nbsp;</a>
+    <section className="projects-section" id="projects">
       <h2>Projects</h2>
       <ProjectCard image={truckdImg} desc="Need help moving some things? Have a truck and want to make some extra money? Get Truckd!" title="Truckd"
         github="https://github.com/thinkful-ei24/mountain-men-client" demo="https://mountain-men-truckd.herokuapp.com/"

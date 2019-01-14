@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './navbar.css';
 
@@ -7,10 +7,10 @@ function NavBar() {
   return (
     <nav role="nav">
       <ul>
-        <li className="nav-projects"><Link to="#projects">Projects</Link></li>
-        <li className="nav-skills"><Link to="#skills">Skills</Link></li>
-        <li className="nav-about"><Link to="#about">About</Link></li>
-        <li className="nav-contact"><Link to="#contact">Contact</Link></li>
+        <li className="nav-projects"><AnchorLink href="#projects" offset="58px">Projects</AnchorLink></li>
+        <li className="nav-skills"><AnchorLink href="#skills" offset="58px">Skills</AnchorLink></li>
+        <li className="nav-about"><AnchorLink href="#about" offset="58px">About</AnchorLink></li>
+        <li className="nav-contact"><AnchorLink href="#contact" offset="58px">Contact</AnchorLink></li>
         {/* <li><Link to="#">Resume</Link></li>
         <li><Link to="#">LI</Link></li>
         <li><Link to="#">GH</Link></li> */}
