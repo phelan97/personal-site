@@ -66,7 +66,8 @@
 }
 
 .project-button:hover {
-  background-color: #009FFD;
+  background: #5E1311;
+  color: white;
 }
 
 .header-summary {

@@ -19,9 +19,9 @@ nav a {
 }
 
 nav a:hover {
-  color: #009FFD;
-  /* border-bottom: 1px solid black; */
-  transition: 0.4s;
+  /* color: #009FFD; */
+  border-bottom: 1px solid #EAF6FF;
+  /* transition: 0.4s; */
 }
 
 @media only screen and (max-width: 420px) {

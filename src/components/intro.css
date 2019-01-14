@@ -1,5 +1,6 @@
 .intro-section {
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/hero2.jpg');
+  background-size: cover;
   text-align: center;
   height: 750px;
   height: 95vh;
