@@ -5,9 +5,12 @@
   /* grid-template-rows: repeat(2, auto); */
   margin: 15px;
   padding: 10px;
-  background-color: #ccc;
+  background-color: #f4f4f4;
   border-radius: 3px;
-  /* TODO: border shadow */
+  box-shadow: 3px 3px #ccc;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card h3,
