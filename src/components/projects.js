@@ -27,7 +27,7 @@ function Projects() {
         github="https://github.com/thinkful-ei24/mountain-men-client" demo="https://mountain-men-truckd.herokuapp.com/"
         icons={icons} tech={tech} techStr={techStr}/>
       <ProjectCard image={boardImg} desc="One of my side projects to practice GraphQL. This app implements functionality similar to Trello, and will continue to be updated as I have the opportunity to add new features." title="Bulletin Board"
-        github="https://github.com/phelan97/trello-clone-client" demo="https://graphql-bulletin-board.herokuapp.com/demo"
+        github="https://github.com/phelan97/bulletin-board-client" demo="https://graphql-bulletin-board.herokuapp.com/demo"
         icons={icons} tech={tech} techStr={graphqlTechStr}/>
       <ProjectCard image={sraImg} desc="Expand your German vocabulary using this individualized learning app. This app adjusts the questions you see depending on what words you know (and which ones you're struggling with)"
         title="Learn German"
