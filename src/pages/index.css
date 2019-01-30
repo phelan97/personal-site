@@ -60,7 +60,7 @@ section {
 }
 
 .contact-section {
-  background-color: #3454D1;
+  background-color: #395fa6;
   color: white;
   padding-bottom: 15px;
 }
@@ -88,6 +88,7 @@ a.anchor {
   transition: 0.4s;
 }
 
-.contact-links a:hover {
-  /* color: red; */
+.contact-icon:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
 }

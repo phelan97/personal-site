@@ -32,7 +32,7 @@ const IndexPage = () => (
       <section className="contact-section" id="contact">
         <h2>Contact me!</h2>
         <div className="contact-links">
-          <a href="mailto:seanphelan97@gmail.com" className="contact-link"><FaEnvelope size="50px"/></a>
+          <a href="mailto:seanphelan97@gmail.com"><FaEnvelope size="50px" className="contact-icon"/></a>
           <a href="https://www.linkedin.com/in/sean-phelan97"><FaLinkedin size="50px" className="contact-icon"/></a>
           <a href="https://github.com/phelan97"><FaGithub size="50px" className="contact-icon" /></a>
         </div>

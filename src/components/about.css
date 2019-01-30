@@ -1,13 +1,13 @@
 .about-section p {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  text-align: left;
+  max-width: 36em;
+  line-height: 1.5;
 }
 
-@media only screen and (max-width: 600px) {
-  .about-section p {
-    text-align: left;
-  }
+.about-section {
+  background-color: #e0e0e0;
 }
