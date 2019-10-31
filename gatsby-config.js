@@ -5,6 +5,10 @@ const cfg = module.exports = {
     author: 'Sean Phelan',
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: { trackingId: process.env.GOOGLE_TRACKING_ID  }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,16 +35,6 @@ const cfg = module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
-
-if (process.env.CONTEXT === "production") {
-  const googleAnalyticsCfg = {
-    resolve: "gatsby-plugin-google-analytics",
-    options: {
-      trackingId: process.env.GOOGLE_TRACKING_ID
-    }
-  };
-  cfg.plugins.push(googleAnalyticsCfg);
-}
+};
 
 module.exports = cfg;
