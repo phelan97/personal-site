@@ -1,4 +1,4 @@
-module.exports = {
+const cfg = module.exports = {
   siteMetadata: {
     title: 'Sean Phelan',
     description: '',
@@ -32,3 +32,15 @@ module.exports = {
     // 'gatsby-plugin-offline',
   ],
 }
+
+if (process.env.CONTEXT === "production") {
+  const googleAnalyticsCfg = {
+    resolve: "gatsby-plugin-google-analytics",
+    options: {
+      trackingId: process.env.GOOGLE_TRACKING_ID
+    }
+  };
+  cfg.plugins.push(googleAnalyticsCfg);
+}
+
+module.exports = cfg;
