@@ -7,7 +7,7 @@ const cfg = module.exports = {
   plugins: [
     {
       resolve: "gatsby-plugin-google-tagmanager",
-      options: { trackingId: process.env.GOOGLE_TAGMANAGER_ID }
+      options: { id: process.env.GOOGLE_TAGMANAGER_ID }
     },
     'gatsby-plugin-react-helmet',
     {
