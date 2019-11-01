@@ -6,8 +6,8 @@ const cfg = module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
-      options: { trackingId: process.env.GOOGLE_TRACKING_ID  }
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: { trackingId: process.env.GOOGLE_TAGMANAGER_ID }
     },
     'gatsby-plugin-react-helmet',
     {
