@@ -5,8 +5,6 @@ import { checkPropTypes } from 'prop-types';
 // TODO: image alt text
 function ProjectCard(props) {
   // TODO: Map icon data to a list and display it. Remove tech prop
-  // props.icons
-  // const listData = props.tech.map((str, index) => <li key={index}>{str}</li>);
   return (
     <div className="project-card">
       <h3>{props.title}</h3>
@@ -15,10 +13,7 @@ function ProjectCard(props) {
         <h4 className="header-summary">Summary</h4>
         {props.desc}
         <h4>Technologies</h4>
-        <p>{props.techStr}</p>
-        {/* <ul>
-          {listData}
-        </ul> */}
+        <p>{props.technologies}</p>
         <div className="project-links">
           <a className="project-button" target="_blank" rel="noopener noreferrer" href={props.github}>GitHub</a>
           <a className="project-button" target="_blank" rel="noopener noreferrer" href={props.demo}>Demo</a>

@@ -9,6 +9,7 @@ const cfg = module.exports = {
     author: 'Sean Phelan',
   },
   plugins: [
+    `gatsby-source-contentful`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -17,6 +18,7 @@ const cfg = module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-google-tagmanager`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: { id: process.env.GOOGLE_TAGMANAGER_ID }
