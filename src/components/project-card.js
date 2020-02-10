@@ -6,22 +6,22 @@ import { checkPropTypes } from 'prop-types';
 function ProjectCard(props) {
   // TODO: Map icon data to a list and display it. Remove tech prop
   // props.icons
-  const listData = props.tech.map((str, index) => <li key={index}>{str}</li>);
+  // const listData = props.tech.map((str, index) => <li key={index}>{str}</li>);
   return (
     <div className="project-card">
       <h3>{props.title}</h3>
-      <img src={props.image} />
+      <img src={props.image} alt={`app thumbnail for ${props.title}`}/>
       <div className="project-info">
         <h4 className="header-summary">Summary</h4>
-        <p>{props.desc}</p>
+        {props.desc}
         <h4>Technologies</h4>
         <p>{props.techStr}</p>
         {/* <ul>
           {listData}
         </ul> */}
         <div className="project-links">
-          <a className="project-button" target="_blank" href={props.github}>GitHub</a>
-          <a className="project-button" target="_blank" href={props.demo}>Demo</a>
+          <a className="project-button" target="_blank" rel="noopener noreferrer" href={props.github}>GitHub</a>
+          <a className="project-button" target="_blank" rel="noopener noreferrer" href={props.demo}>Demo</a>
         </div>
       </div>
     </div>
