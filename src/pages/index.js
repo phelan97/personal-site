@@ -26,8 +26,10 @@ const IndexPage = () => (
 
     <main>
       <Intro />
-      <Projects />
-      <Skills />
+      <div class="content-container">
+        <Projects />
+        <Skills />
+      </div>
       <About />
       <section className="contact-section" id="contact">
         <h2>Contact me!</h2>

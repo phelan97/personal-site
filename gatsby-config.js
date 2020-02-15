@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const cfg = module.exports = {
   siteMetadata: {
     title: 'Sean Phelan',
@@ -5,6 +9,17 @@ const cfg = module.exports = {
     author: 'Sean Phelan',
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: process.env.CONTENTFUL_DOWNLOAD_LOCAL || false
+      }
+    },
+    "gatsby-plugin-google-tagmanager",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: { id: process.env.GOOGLE_TAGMANAGER_ID }
