@@ -92,3 +92,12 @@ a.anchor {
   transform: scale(1.1);
   transition: all .3s ease-in-out;
 }
+
+/* TODO: MAX container size for the page here... check for duplication.... pc, mobile, tv compatible */
+.content-container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  overflow: hidden;
+}

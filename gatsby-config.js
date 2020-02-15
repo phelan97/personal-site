@@ -1,6 +1,6 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 const cfg = module.exports = {
   siteMetadata: {
@@ -9,16 +9,17 @@ const cfg = module.exports = {
     author: 'Sean Phelan',
   },
   plugins: [
-    `gatsby-source-contentful`,
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: "gatsby-source-contentful",
       options: {
-        spaceId: `2hrwkaagtesd`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
+        downloadLocal: process.env.CONTENTFUL_DOWNLOAD_LOCAL || false
+      }
     },
-    `gatsby-plugin-google-tagmanager`,
+    "gatsby-plugin-google-tagmanager",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: { id: process.env.GOOGLE_TAGMANAGER_ID }

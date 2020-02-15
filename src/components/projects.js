@@ -7,13 +7,17 @@ import './projects.css';
 function Projects() {
   return (
     <StaticQuery query={projectDetailsQuery} render={data => (
-        data.allContentfulProjectDetails.edges.map(({node}) => (
-          <ProjectCard
-          key={node.id} image={node.thumbnail.file.url}
-          desc={documentToReactComponents(JSON.parse(node.description.description))} title={node.title}
-          github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
-          >{console.log(node.technologies)}</ProjectCard>
-        ))
+      <ul class="project-listing">
+        {data.allContentfulProjectDetails.edges.map(({node}) => (
+          <li>
+            <ProjectCard
+              key={node.id} image={node.thumbnail.file.url}
+              desc={documentToReactComponents(JSON.parse(node.description.description))} title={node.title}
+              github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
+            />
+          </li>
+        ))}
+      </ul>
     )}/>
   );
 }
