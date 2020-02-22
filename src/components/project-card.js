@@ -3,12 +3,13 @@ import './project-card.css';
 import { checkPropTypes } from 'prop-types';
 
 // TODO: image alt text
+// TODO: consider adding image/thumbnail component
 function ProjectCard(props) {
   // TODO: Map icon data to a list and display it. Remove tech prop
   return (
     <div className="project-card">
       <h3>{props.title}</h3>
-      <img src={props.image} alt={`app thumbnail for ${props.title}`}/>
+      <img src={props.images.src} srcSet={props.images.srcSet} alt={`app thumbnail for ${props.title}`}/>
       <div className="project-info">
         <h4 className="header-summary">Summary</h4>
         {props.desc}

@@ -11,7 +11,7 @@ function Projects() {
         {data.allContentfulProjectDetails.edges.map(({node}) => (
           <li>
             <ProjectCard
-              key={node.id} image={node.thumbnail.file.url}
+              key={node.id} images={node.thumbnail.fluid}
               desc={documentToReactComponents(JSON.parse(node.description.description))} title={node.title}
               github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
             />
@@ -36,8 +36,10 @@ const projectDetailsQuery = graphql`
           description
         }
         thumbnail {
-          file {
-            url
+          fluid(maxWidth: 600) {
+            sizes
+            src
+            srcSet
           }
         }
       }
