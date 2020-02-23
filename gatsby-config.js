@@ -9,7 +9,8 @@ const cfg = module.exports = {
     author: 'Sean Phelan',
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-source-contentful",
       options: {

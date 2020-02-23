@@ -8,8 +8,23 @@ import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import favicon from '../images/favicon.ico';
-
+import { createGlobalStyle } from "styled-components";
 import './index.css';
+
+const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Lato:400,700');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+`;
 
 const IndexPage = () => (
   <React.Fragment>
@@ -18,7 +33,6 @@ const IndexPage = () => (
       <meta charSet="utf-8" />
       <title>Portfolio - Sean Phelan</title>
       <meta name="description" content="Hi, I'm Sean! This is my portfolio site, which holds some of my latest web development projects." />
-      <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet" />
       <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
 

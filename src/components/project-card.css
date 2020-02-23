@@ -12,6 +12,7 @@
   word-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
+  white-space: pre-line;
 }
 
 li .project-card {
