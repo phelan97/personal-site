@@ -20,11 +20,6 @@ const cfg = module.exports = {
         downloadLocal: process.env.CONTENTFUL_DOWNLOAD_LOCAL || false
       }
     },
-    "gatsby-plugin-google-tagmanager",
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: { id: process.env.GOOGLE_TAGMANAGER_ID }
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
