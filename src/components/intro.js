@@ -14,7 +14,7 @@ function Intro() {
         <Img fluid={data.contentfulSiteInfo.heroImage.fluid} className="hero-image" loading="eager"/>
         <a className="anchor" id="intro-link">&nbsp;</a>
         <div id="text-block">
-          <h1>Sean Phelan</h1>
+          <h2>Sean Phelan</h2>
           <p>{data.contentfulSiteInfo.intro.intro}</p>
           <AnchorLink href="#projects" offset="58"><button><FaArrowDown size="25px" /></button></AnchorLink>
         </div>
