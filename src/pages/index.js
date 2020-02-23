@@ -50,7 +50,7 @@ const IndexPage = () => (
 
     <main>
       <Intro />
-      <div class="content-container">
+      <div className="content-container">
         <Projects />
         <Skills />
       </div>

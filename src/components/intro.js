@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'gatsby';
 import Img from 'gatsby-image';
 import {StaticQuery, graphql} from 'gatsby';
 import {FaArrowDown} from 'react-icons/fa';
@@ -29,17 +28,20 @@ const introBlockQuery = graphql`
     intro {
       intro
     }
-    heroImage {
-      fluid(maxWidth: 3840) {
-        aspectRatio
-        base64
-        src
-        sizes
-        srcSet
-        srcSetWebp
-        srcWebp
-        tracedSVG
-      }
+    ...hero
+  }
+}
+fragment hero on ContentfulSiteInfo {
+  heroImage {
+    fluid(maxWidth: 3840) {
+      aspectRatio
+      base64
+      src
+      sizes
+      srcSet
+      srcSetWebp
+      srcWebp
+      tracedSVG
     }
   }
 }

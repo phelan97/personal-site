@@ -9,7 +9,7 @@ function Projects() {
     <StaticQuery query={projectDetailsQuery} render={data => (
       <section id="projects">
         <h2>Projects</h2>
-        <ul class="project-listing">
+        <ul className="project-listing">
           {data.allContentfulProjectDetails.edges.map(({node}) => (
             <li>
               <ProjectCard
@@ -30,6 +30,7 @@ const projectDetailsQuery = graphql`
   allContentfulProjectDetails {
     edges {
       node {
+        id
         title
         githubLink
         hostedLink
@@ -38,20 +39,23 @@ const projectDetailsQuery = graphql`
         description {
           description
         }
-        thumbnail {
-          fluid(maxWidth: 600, resizingBehavior: THUMB) {
-            sizes
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            base64
-          }
-        }
+        ...thumbnailData
       }
     }
   }
+}
+fragment thumbnailData on ContentfulProjectDetails {
+  thumbnail {
+    fluid(maxWidth: 600, resizingBehavior: PAD) {
+      sizes
+      src
+      srcSet
+      srcSetWebp
+      srcWebp
+      tracedSVG
+      base64
+    }
+	}
 }
 `
 

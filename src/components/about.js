@@ -9,7 +9,7 @@ function About() {
         <section className="about-section" id="about">
           <h2>About me</h2>
           {data.contentfulAuthorInfo.bio.bio.split("\n").map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+              <p key={index}>{paragraph}</p>
           ))}
         </section>
     )}/>
