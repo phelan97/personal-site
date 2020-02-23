@@ -1,6 +1,4 @@
-.intro-section {
-  background-image: url('../images/hero2.jpg');
-  background-size: cover;
+.intro {
   text-align: center;
   height: 750px;
   height: 95vh;
@@ -8,6 +6,14 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #555;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-size: contain;
 }
 
 #text-block {

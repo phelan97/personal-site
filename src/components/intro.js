@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'gatsby';
+import Img from 'gatsby-image';
 import {StaticQuery, graphql} from 'gatsby';
 import {FaArrowDown} from 'react-icons/fa';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -9,26 +10,39 @@ function Intro() {
   return (
     <StaticQuery query={introBlockQuery} render={data => {
       return (
-      <section className="intro-section">
-        <a className="anchor" id="intro">&nbsp;</a>
+      <div className="intro">
+        <Img fluid={data.contentfulSiteInfo.heroImage.fluid} className="hero-image" loading="eager"/>
+        <a className="anchor" id="intro-link">&nbsp;</a>
         <div id="text-block">
           <h1>Sean Phelan</h1>
           <p>{data.contentfulSiteInfo.intro.intro}</p>
           <AnchorLink href="#projects" offset="58"><button><FaArrowDown size="25px" /></button></AnchorLink>
         </div>
-      </section>
+      </div>
     )}}/>
   )
 }
 
 const introBlockQuery = graphql`
-  query IntroBlockQuery {
-    contentfulSiteInfo {
-      intro {
-        intro
+{
+  contentfulSiteInfo {
+    intro {
+      intro
+    }
+    heroImage {
+      fluid(maxWidth: 3840) {
+        aspectRatio
+        base64
+        src
+        sizes
+        srcSet
+        srcSetWebp
+        srcWebp
+        tracedSVG
       }
     }
   }
+}
 `
 
 export default Intro;
