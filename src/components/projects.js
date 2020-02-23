@@ -36,10 +36,14 @@ const projectDetailsQuery = graphql`
           description
         }
         thumbnail {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 600, resizingBehavior: THUMB) {
             sizes
             src
             srcSet
+            srcSetWebp
+            srcWebp
+            tracedSVG
+            base64
           }
         }
       }
