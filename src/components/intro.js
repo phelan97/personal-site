@@ -28,20 +28,10 @@ const introBlockQuery = graphql`
     intro {
       intro
     }
-    ...hero
-  }
-}
-fragment hero on ContentfulSiteInfo {
-  heroImage {
-    fluid(maxWidth: 3840) {
-      aspectRatio
-      base64
-      src
-      sizes
-      srcSet
-      srcSetWebp
-      srcWebp
-      tracedSVG
+    heroImage {
+      fluid(maxWidth: 3840) {
+        ...GatsbyContentfulFluid_withWebp
+      }
     }
   }
 }

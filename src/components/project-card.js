@@ -9,7 +9,7 @@ function ProjectCard(props) {
   return (
     <div className="project-card">
       <h3>{props.title}</h3>
-      <Img fluid={props.images} alt={`app thumbnail for ${props.title}`}/>
+      <Img objectFit="contain" fluid={props.images} alt={`app thumbnail for ${props.title}`}/>
       <div className="project-info">
         <h4 className="header-summary">Summary</h4>
         {props.desc}

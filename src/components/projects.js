@@ -10,7 +10,8 @@ function Projects() {
       <section id="projects">
         <h2>Projects</h2>
         <ul className="project-listing">
-          {data.allContentfulProjectDetails.edges.map(({node}) => (
+          {data.allContentfulProjectDetails.edges.map(({node}) => {
+            return (
             <li>
               <ProjectCard
                 key={node.id} images={node.thumbnail.fluid}
@@ -18,7 +19,7 @@ function Projects() {
                 github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
               />
             </li>
-          ))}
+          )})}
         </ul>
       </section>
     )}/>
@@ -46,14 +47,9 @@ const projectDetailsQuery = graphql`
 }
 fragment thumbnailData on ContentfulProjectDetails {
   thumbnail {
-    fluid(maxWidth: 600, resizingBehavior: PAD) {
-      sizes
-      src
-      srcSet
-      srcSetWebp
-      srcWebp
+    fluid(maxWidth: 600) {
+      ...GatsbyContentfulFluid_withWebp_noBase64
       tracedSVG
-      base64
     }
 	}
 }
