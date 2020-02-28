@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectCard from './project-card';
 import {StaticQuery, graphql} from 'gatsby';
-import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import './projects.css';
 
 function Projects() {
@@ -11,11 +10,12 @@ function Projects() {
         <h2>Projects</h2>
         <ul className="project-listing">
           {data.allContentfulProjectDetails.edges.map(({node}) => {
+            console.log(node.description.description)
             return (
             <li>
               <ProjectCard
                 key={node.id} images={node.thumbnail.fluid}
-                desc={documentToReactComponents(JSON.parse(node.description.description))} title={node.title}
+                description={node.description.description} title={node.title}
                 github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
               />
             </li>
