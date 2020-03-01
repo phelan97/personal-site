@@ -1,5 +1,6 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby'
+import {slide as Menu} from 'react-burger-menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './navbar.css';
@@ -9,11 +10,12 @@ function NavBar() {
     <StaticQuery query={navQuery} render={data => {
       return (
         <nav role="nav">
-          <ul>
+          <Menu>
             {data.allContentfulNavigationEntry.edges.map((edge, index) => (
-              <li key={index}><AnchorLink key={edge.node.id} href={edge.node.partialUrl} offset="58px">{edge.node.title}</AnchorLink></li>
+              <AnchorLink key={edge.node.id} id={edge.node.title.toLowerCase()} className="menu-item"
+                href={edge.node.partialUrl} offset="58px">{edge.node.title}</AnchorLink>
             )).reverse()}
-          </ul>
+          </Menu>
         </nav>
       )
     }}/>
