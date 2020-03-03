@@ -1,23 +1,22 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import {StaticQuery, graphql} from 'gatsby';
+import {Link, StaticQuery, graphql} from 'gatsby';
 import {FaArrowDown} from 'react-icons/fa';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './intro.css';
 
 function Intro() {
   return (
     <StaticQuery query={introBlockQuery} render={data => {
       return (
-      <div className="intro">
+      <section className="intro">
         <Img fluid={data.contentfulSiteInfo.heroImage.fluid} className="hero-image" loading="eager"/>
         <a className="anchor" id="intro-link">&nbsp;</a>
         <div id="text-block">
           <h2>Sean Phelan</h2>
           <p>{data.contentfulSiteInfo.intro.intro}</p>
-          <AnchorLink href="#projects" offset="58"><button><FaArrowDown size="25px" /></button></AnchorLink>
+          <Link to="#projects" offset="58"><button><FaArrowDown size="25px" /></button></Link>
         </div>
-      </div>
+      </section>
     )}}/>
   )
 }

@@ -8,6 +8,10 @@
   border-bottom: 1px solid #555;
 }
 
+section.intro {
+  padding: 0;
+}
+
 .hero-image {
   position: absolute;
   top: 0;

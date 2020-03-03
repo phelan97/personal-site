@@ -3,7 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Intro from '../components/intro';
 import Skills from '../components/skills';
-import About from '../components/about';
+import AboutSection from '../components/AboutSection';
 import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -17,6 +17,9 @@ ${reset}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Lato:400,700');
 * {
   box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -50,11 +53,11 @@ const IndexPage = () => (
 
     <main>
       <Intro />
-      <div className="content-container">
-        <Projects />
-        <Skills />
-      </div>
-      <About />
+      <Projects />
+      <Skills />
+
+      <AboutSection />
+
       <section className="contact-section" id="contact">
         <h2>Contact me!</h2>
         <div className="contact-links">
