@@ -9,9 +9,7 @@ function Projects() {
       <section id="projects">
         <h2>Projects</h2>
         <ul className="project-listing">
-          {data.allContentfulProjectDetails.edges.map(({node}) => {
-            console.log(node.description.description)
-            return (
+          {data.allContentfulProjectDetails.edges.map(({node}) => (
             <li>
               <ProjectCard
                 key={node.id} images={node.thumbnail.fluid}
@@ -19,7 +17,7 @@ function Projects() {
                 github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
               />
             </li>
-          )})}
+          ))}
         </ul>
       </section>
     )}/>
