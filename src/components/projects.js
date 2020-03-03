@@ -10,9 +10,9 @@ function Projects() {
         <h2>Projects</h2>
         <ul className="project-listing">
           {data.allContentfulProjectDetails.edges.map(({node}) => (
-            <li>
+            <li key={node.id}>
               <ProjectCard
-                key={node.id} images={node.thumbnail.fluid}
+                images={node.thumbnail.fluid}
                 description={node.description.description} title={node.title}
                 github={node.githubLink} demo={node.hostedLink} technologies={node.technologies.join(", ")}
               />
