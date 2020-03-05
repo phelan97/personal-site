@@ -7,6 +7,8 @@ import AboutSection from '../components/AboutSection';
 import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import {graphql} from 'gatsby';
+
 import favicon from '../images/favicon.ico';
 import { createGlobalStyle } from "styled-components";
 import reset from 'styled-reset';
@@ -43,10 +45,12 @@ const IndexPage = () => (
     <GlobalStyle />
 
     <Helmet>
+      <html lang="eng" />
       <meta charSet="utf-8" />
       <title>Portfolio - Sean Phelan</title>
       <meta name="description" content="Hi, I'm Sean! This is my portfolio site, which holds some of my latest web development projects." />
-      <link rel="icon" type="image/png" href={favicon} />
+      <link rel="icon" type="image/png" href={favicon}/>
+      <link rel="preconnect" href="https://www.googletagmanager.com"/>
     </Helmet>
 
     <Header />
