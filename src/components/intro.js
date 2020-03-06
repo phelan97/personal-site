@@ -14,8 +14,7 @@ function Intro() {
         <div id="text-block">
           <h2>Sean Phelan</h2>
           <p>{data.contentfulSiteInfo.intro.intro}</p>
-          <Link to="#projects" offset="58"><button>My Projects</button></Link>
-          <Link to="/resume" offset="58"><button>Resume</button></Link>
+          <Link to="#projects" offset="58"><button><FaArrowDown size="25px" /></button></Link>
         </div>
       </section>
     )}}/>

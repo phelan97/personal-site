@@ -12,28 +12,6 @@ section.intro {
   padding: 0;
 }
 
-.intro button {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: 1.3rem;
-  padding: 10px;
-}
-
-/* Older button styling */ 
-#text-block button {
-  cursor: pointer;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 10px 15px 5px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  transition: 0.7s;
-}
-
 .hero-image {
   position: absolute;
   top: 0;
@@ -61,6 +39,17 @@ section.intro {
   text-align: center;
   max-width: 36em;
   padding: 15px;
+}
+
+#text-block button {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 15px 5px;
+  margin-bottom: 15px;
+  transition: 0.7s;
 }
 
 #text-block button:hover {
