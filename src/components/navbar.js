@@ -8,9 +8,9 @@ const NavBar = () => {
     <StaticQuery query={navQuery} render={data => {
       return (
         <nav role="nav">
-          <Menu class="smooth-scroll-menu">
+          <Menu right className="smooth-scroll-menu">
             {data.allContentfulNavigationEntry.edges.map(edge => (
-              <Link to={edge.node.partialUrl} key={edge.node.id} 
+              <Link to={`./${edge.node.partialUrl}`} key={edge.node.id} 
                     offset="58px">{edge.node.title}
               </Link>
             )).reverse()}

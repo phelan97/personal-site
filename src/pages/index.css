@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* hardcoded workaround for fixed header */
-  margin-top: 58px; 
-}
-
 h1, h2, h3,
 h4, h5, h6 {
   text-align: center;

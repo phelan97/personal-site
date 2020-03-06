@@ -2,7 +2,7 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 36px;
   height: 30px;
   right: 36px;
@@ -68,11 +68,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* END HELPER CLASSES */
-
-.header nav {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
 nav ul {
   display: flex;
