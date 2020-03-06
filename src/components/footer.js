@@ -1,9 +1,10 @@
 import React from 'react';
 import './footer.css';
 
-function Footer() {
+function Footer(props) {
   return (
     <footer role="contentinfo">
+      {props.children}
       {/* <ul>
         <li>Email</li>
         <li>GI</li>

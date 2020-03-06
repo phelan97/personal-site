@@ -7,8 +7,7 @@ import AboutSection from '../components/AboutSection';
 import Projects from '../components/projects';
 import {Helmet} from 'react-helmet';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-import {graphql} from 'gatsby';
-
+import {Link, graphql} from 'gatsby';
 import favicon from '../images/favicon.ico';
 import { createGlobalStyle } from "styled-components";
 import reset from 'styled-reset';
@@ -72,7 +71,10 @@ const IndexPage = () => (
       </section>
     </main>
 
-    <Footer />
+    <Footer>
+      <span>Last updated March 2020. You can contact me <Link to="/contact">here.</Link></span>
+      <span class="outbound-links">TW, LI, GH, RESUME</span>
+    </Footer>
     
   </React.Fragment>
 )
