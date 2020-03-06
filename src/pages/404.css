@@ -1,0 +1,35 @@
+
+.page-not-found {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+.page-not-found p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-not-found a,
+.page-not-found a:visited {
+  color: #3a0037;
+  border-bottom: 2px solid #3a0037;
+  text-decoration: none;
+}
+
+.page-not-found a:hover {
+  transition-duration: 0.5s;
+  color: #ee5555;
+  border-bottom: 2px solid #ee5555;
+}
+
+.page-not-found a.home {
+  font-size: 1.4em;
+}
